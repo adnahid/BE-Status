@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StatusApplication"
+        tools:targetApi="31">
+        <activity
+            android:name="EnglishStatusActivity.Lost"
+            android:exported="false" />
+        <activity
+            android:name="EnglishStatusActivity.Other"
+            android:exported="false" />
+        <activity
+            android:name="EnglishStatusActivity.Love"
+            android:exported="false" />
+        <activity
+            android:name="EnglishStatusActivity.Broken"
+            android:exported="false" />
+        <activity
+            android:name="EnglishStatusActivity.InspiredEng"
+            android:exported="false" />
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebView"
+            android:exported="false"
+            android:theme="@style/Theme.StatusApplication" />
+        <activity
+            android:name="StatusList.Human"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.Islamic"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.Fail"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.DifferentDays"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.Alone"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.Educational"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.Attitude"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.Emotional"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.LifeOriented"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.Happy"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.Motivated"
+            android:exported="false" />
+        <activity
+            android:name="StatusList.Lovely"
+            android:exported="false" />
+        <activity
+            android:name=".SadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

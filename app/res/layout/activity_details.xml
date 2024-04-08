@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:background="#ffffff"
+    >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+
+            <ImageView
+                android:id="@+id/topImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/background"
+                android:scaleType="fitXY"
+                />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/textLayoutCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="#009688"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/quotes"
+                            android:padding="3dp"
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/textLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="this is"
+                            android:gravity="center_horizontal"
+                            android:layout_marginBottom="15dp"
+                            android:padding="5dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/quotes2nd"
+                            android:padding="3dp"
+                            android:layout_gravity="end"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/buttonLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="text title top Image"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:backgroundTint="#2196F3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/textLayoutCard"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_horizontal"
+                    android:background="#3F51B5"
+                    android:layout_below="@id/buttonLayout"
+                    android:layout_margin="4dp"
+                    >
+
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_add_home_24"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#9C27B0"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        >
+                    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabCopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_add_home_24"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#9C27B0"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        >
+                    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
