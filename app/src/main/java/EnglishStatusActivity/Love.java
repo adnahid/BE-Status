@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +18,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.statusapplication.DetailsActivity;
-import com.example.statusapplication.FragmentEng;
 import com.example.statusapplication.R;
 import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdLoader;
@@ -37,7 +35,7 @@ import java.util.Random;
 public class Love extends AppCompatActivity {
 
     RecyclerView beautifulRecyclerView;
-    ImageView beautifulImageBack;
+
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -48,22 +46,16 @@ public class Love extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_beautiful);
+        setContentView(R.layout.love);
         beautifulRecyclerView = findViewById(R.id.beautifulRecyclerView);
-        beautifulImageBack = findViewById(R.id.beautifulImageBack);
+
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
 
-        beautifulImageBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Love.this, FragmentEng.class);
-                startActivity(intent);
-            }
-        });
+
 
         beautifulTable();
         finalArrayListTable();

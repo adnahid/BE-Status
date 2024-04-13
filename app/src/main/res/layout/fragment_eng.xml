@@ -53,7 +53,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/beautiful"
+            android:id="@+id/inspire"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:cardCornerRadius="12dp"
@@ -160,7 +160,7 @@
         >
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/inspire"
+            android:id="@+id/love"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:cardCornerRadius="12dp"

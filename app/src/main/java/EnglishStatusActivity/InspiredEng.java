@@ -1,9 +1,13 @@
 package EnglishStatusActivity;
 
+import static android.app.PendingIntent.getActivity;
+
 import android.content.ClipData;
 import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +19,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -37,7 +42,7 @@ import java.util.Random;
 public class InspiredEng extends AppCompatActivity {
 
     RecyclerView inspriedRecyclerView;
-    ImageView inaspiredImageBack;
+    Toolbar toolbar;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -49,20 +54,16 @@ public class InspiredEng extends AppCompatActivity {
        // EdgeToEdge.enable(this);
         setContentView(R.layout.activity_inpired_eng);
         inspriedRecyclerView = findViewById(R.id.inspriedRecyclerView);
-        inaspiredImageBack = findViewById(R.id.inaspiredImageBack);
+        //toolbar = findViewById(R.id.toolbar);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
+        
 
-        inaspiredImageBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(InspiredEng.this, FragmentEng.class);
-                startActivity(intent);
-            }
-        });
+
+        
 
         inspriedTable();
         finalArrayListTable();

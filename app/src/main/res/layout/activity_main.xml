@@ -24,7 +24,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nev_headder"
         app:menu="@menu/buttonnavigation_item"
-        android:backgroundTint="#E0D4F0"
+        android:backgroundTint="#2F4F4F"
         />
 
 

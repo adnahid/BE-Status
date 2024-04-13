@@ -11,7 +11,7 @@
 
     <item android:id="@+id/home"
         android:title="Home"
-        android:icon="@drawable/baseline_add_home_24"
+        android:icon="@drawable/home"
         android:iconTint="@color/white"
         android:checkable="true"
         >
@@ -32,7 +32,7 @@
         >
         <item android:id="@+id/share"
             android:title="Share"
-            android:icon="@drawable/baseline_add_home_24"
+            android:icon="@drawable/send"
             android:iconTint="@color/white"
             android:checkable="true"
             >
@@ -40,7 +40,7 @@
 
         <item android:id="@+id/rate"
             android:title="Rate"
-            android:icon="@drawable/baseline_add_home_24"
+            android:icon="@drawable/rate"
             android:iconTint="@color/white"
             android:checkable="true"
             >
@@ -51,13 +51,25 @@
     <group
         android:id="@+id/group3rd"
         >
-        <item android:id="@+id/policy"
-            android:title="Policy and Privacy"
-            android:icon="@drawable/baseline_add_home_24"
+
+
+        <item android:id="@+id/about"
+            android:title="About"
+            android:icon="@drawable/about"
             android:iconTint="@color/white"
             android:checkable="true"
             >
         </item>
+
+        <item android:id="@+id/policy"
+            android:title="Policy and Privacy"
+            android:icon="@drawable/policy"
+            android:iconTint="@color/white"
+            android:checkable="true"
+            >
+        </item>
+
+
 
 
     </group>

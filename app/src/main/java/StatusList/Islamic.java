@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,7 +38,7 @@ import java.util.Random;
 public class Islamic extends AppCompatActivity {
 
     RecyclerView islamicRecyclerView;
-    ImageView islamicImageBack;
+    Toolbar toolbar;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -49,20 +50,21 @@ public class Islamic extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_islamic);
         islamicRecyclerView = findViewById(R.id.islamicRecyclerView);
-        islamicImageBack = findViewById(R.id.islamicImageBack);
+        toolbar = findViewById(R.id.toolbar);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
 
-        islamicImageBack.setOnClickListener(new View.OnClickListener() {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Islamic.this, MainActivity.class);
                 startActivity(intent);
             }
         });
+
 
         islamicTable();
         finalArrayListTable();

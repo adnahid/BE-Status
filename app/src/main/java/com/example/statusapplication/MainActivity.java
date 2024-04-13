@@ -164,7 +164,18 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Offer", Toast.LENGTH_SHORT).show();
                     drawerLayout.closeDrawer(GravityCompat.START);
+                }else if (item.getItemId()==R.id.about){
+
+                    WebViewActivity.url="https://bdnews24.com/";
+                    Intent intent = new Intent(MainActivity.this,AboutPage.class);
+                    startActivity(intent);
+
+                    //Toast.makeText(MainActivity.this, "Offer", Toast.LENGTH_SHORT).show();
+                    drawerLayout.closeDrawer(GravityCompat.START);
                 }
+
+
+
                 return true;
             }
         });

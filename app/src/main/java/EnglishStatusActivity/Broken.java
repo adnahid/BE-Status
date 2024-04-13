@@ -36,7 +36,6 @@ import java.util.Random;
 
 public class Broken extends AppCompatActivity {
     RecyclerView brokenRecyclerView;
-    ImageView brokenImageBack;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -48,20 +47,14 @@ public class Broken extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_broken);
         brokenRecyclerView = findViewById(R.id.brokenRecyclerView);
-        brokenImageBack = findViewById(R.id.brokenImageBack);
+
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
 
-        brokenImageBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Broken.this, FragmentEng.class);
-                startActivity(intent);
-            }
-        });
+
 
         brokenTable();
         finalArrayListTable();

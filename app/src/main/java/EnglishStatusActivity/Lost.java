@@ -37,7 +37,6 @@ import java.util.Random;
 public class Lost extends AppCompatActivity {
 
     RecyclerView LostRecyclerView;
-    ImageView lostImageBack;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -49,20 +48,14 @@ public class Lost extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_lost);
         LostRecyclerView = findViewById(R.id.LostRecyclerView);
-        lostImageBack = findViewById(R.id.lostImageBack);
+
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
 
-        lostImageBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Lost.this, FragmentEng.class);
-                startActivity(intent);
-            }
-        });
+
 
         ListTable();
         finalArrayListTable();

@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -31,11 +32,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
+import StatusList.DifferentDays;
+
 public class SadActivity extends AppCompatActivity {
 
 
     RecyclerView sadRecyclerView;
-    ImageView sadImageBack;
+    Toolbar toolbar;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -47,14 +50,14 @@ public class SadActivity extends AppCompatActivity {
        // EdgeToEdge.enable(this);
         setContentView(R.layout.activity_sad);
         sadRecyclerView = findViewById(R.id.sadRecyclerView);
-        sadImageBack = findViewById(R.id.sadImageBack);
+        toolbar = findViewById(R.id.toolbar);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
 
-        sadImageBack.setOnClickListener(new View.OnClickListener() {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SadActivity.this, MainActivity.class);

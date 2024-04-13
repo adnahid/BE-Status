@@ -47,4 +47,12 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    //aboutPage
+    <string name="profile">Md delowar Hossain \n App Developer \n Design </string>
+    <string name="gmail">mySelfabout432@gmail.com</string>
+    <string name="contact">+880 1648529374</string>
+    <string name="Address"> Sirajpur Companigong \n Noakhili </string>
+    <string name="Institute"> Feni computer Institute \n feni sodor</string>
+
 </resources>

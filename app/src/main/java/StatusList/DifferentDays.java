@@ -15,12 +15,14 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.statusapplication.DetailsActivity;
 import com.example.statusapplication.MainActivity;
 import com.example.statusapplication.R;
+import com.example.statusapplication.SadActivity;
 import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
@@ -37,7 +39,7 @@ import java.util.Random;
 public class DifferentDays extends AppCompatActivity {
 
     RecyclerView differentRecyclerView;
-    ImageView differentImageBack;
+    Toolbar toolbar;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -50,14 +52,14 @@ public class DifferentDays extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_different_days);
         differentRecyclerView = findViewById(R.id.differentRecyclerView);
-        differentImageBack = findViewById(R.id.differentImageBack);
+        toolbar = findViewById(R.id.toolbar);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
 
-        differentImageBack.setOnClickListener(new View.OnClickListener() {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DifferentDays.this, MainActivity.class);
@@ -93,6 +95,7 @@ public class DifferentDays extends AppCompatActivity {
                 Copy = itemView.findViewById(R.id.Copy);
                 Share = itemView.findViewById(R.id.Share);
 
+
             }
         }
 
@@ -112,7 +115,7 @@ public class DifferentDays extends AppCompatActivity {
             LayoutInflater layoutInflater = getLayoutInflater();
 
             if (viewType == Read) {
-                View view = layoutInflater.inflate(R.layout.story_item, parent, false);
+                View view = layoutInflater.inflate(R.layout.itemlayout, parent, false);
                 return new readHolder(view);
             }
             View view = layoutInflater.inflate(R.layout.native_item, parent, false);
@@ -127,6 +130,7 @@ public class DifferentDays extends AppCompatActivity {
                 hashMap = finalArrayList.get(position);
                 String texTitle  = hashMap.get("texTitle");
                 String texDes = hashMap.get("texDes");
+
 
 
 
@@ -153,6 +157,7 @@ public class DifferentDays extends AppCompatActivity {
 
                     }
                 });
+
 
 
                 readHolder.Share.setOnClickListener(new View.OnClickListener() {
@@ -212,7 +217,7 @@ public class DifferentDays extends AppCompatActivity {
 
         for ( int x=0; x<arrayList.size(); x++){
 
-            if ( x>1 && x%50==0){
+            if ( x>1 && x%40==0){
                 hashMap = new HashMap<>();
                 hashMap.put("itemType","NativeAd");
                 finalArrayList.add(hashMap);

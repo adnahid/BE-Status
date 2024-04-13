@@ -43,7 +43,7 @@ public class FragmentEng extends Fragment {
                              Bundle savedInstanceState) {
         View engView = inflater.inflate(R.layout.fragment_eng, container, false);
         AdView adView = engView.findViewById(R.id.adView);
-        CardView beautiful = engView.findViewById(R.id.beautiful);
+        CardView love = engView.findViewById(R.id.love);
         CardView broken = engView.findViewById(R.id.broken);
         CardView inspire = engView.findViewById(R.id.inspire);
         CardView lost = engView.findViewById(R.id.lost);
@@ -89,7 +89,7 @@ public class FragmentEng extends Fragment {
         engslider.setImageList(slideModelList);
 
         //onClick
-        beautiful.setOnClickListener(new View.OnClickListener() {
+        love.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), Love.class);

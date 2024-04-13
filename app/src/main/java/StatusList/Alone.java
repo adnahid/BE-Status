@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -37,8 +38,7 @@ import java.util.Random;
 public class Alone extends AppCompatActivity {
 
     RecyclerView alonRecyclerView;
-    ImageView alonImageBack;
-    TextView alonItemTex;
+    Toolbar toolbar;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -50,8 +50,8 @@ public class Alone extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_alone);
         alonRecyclerView = findViewById(R.id.alonRecyclerView);
-        alonImageBack = findViewById(R.id.alonImageBack);
-        alonItemTex = findViewById(R.id.alonItemTex);
+        toolbar = findViewById(R.id.toolbar);
+
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -59,7 +59,7 @@ public class Alone extends AppCompatActivity {
             }
         });
 
-        alonImageBack.setOnClickListener(new View.OnClickListener() {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Alone.this, MainActivity.class);

@@ -36,7 +36,7 @@ import java.util.Random;
 
 public class Other extends AppCompatActivity {
     RecyclerView struggleRecyclerView;
-    ImageView struggleImageBack;
+
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -48,20 +48,14 @@ public class Other extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_struggle);
         struggleRecyclerView = findViewById(R.id.struggleRecyclerView);
-        struggleImageBack = findViewById(R.id.struggleImageBack);
+
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
 
-        struggleImageBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Other.this, FragmentEng.class);
-                startActivity(intent);
-            }
-        });
+
 
         struggleTable();
         finalArrayListTable();

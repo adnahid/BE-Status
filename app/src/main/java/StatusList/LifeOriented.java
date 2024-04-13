@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,7 +38,7 @@ import java.util.Random;
 public class LifeOriented extends AppCompatActivity {
 
     RecyclerView lifeOrientedRecyclerView;
-    ImageView lifeOrientedImageBack;
+    Toolbar toolbar;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
@@ -49,14 +50,14 @@ public class LifeOriented extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_life_oriented);
         lifeOrientedRecyclerView = findViewById(R.id.lifeOrientedRecyclerView);
-        lifeOrientedImageBack = findViewById(R.id.lifeOrientedImageBack);
+        toolbar = findViewById(R.id.toolbar);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
 
-        lifeOrientedImageBack.setOnClickListener(new View.OnClickListener() {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LifeOriented.this, MainActivity.class);
