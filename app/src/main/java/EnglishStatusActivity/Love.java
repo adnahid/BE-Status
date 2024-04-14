@@ -204,7 +204,7 @@ public class Love extends AppCompatActivity {
 
         for ( int x=0; x<arrayList.size(); x++){
 
-            if ( x>1 && x%50==0){
+            if ( x>1 && x%40==0){
                 hashMap = new HashMap<>();
                 hashMap.put("itemType","NativeAd");
                 finalArrayList.add(hashMap);

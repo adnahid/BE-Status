@@ -82,10 +82,18 @@ public class FragmentEng extends Fragment {
 
         //Image Slider
         List<SlideModel> slideModelList = new ArrayList<>();
-        String url0 = "https://th.bing.com/th/id/OIP.8c5gcDQpDsiRD140Pdak6AHaHe?rs=1&pid=ImgDetMain";
+        String url0 = "https://th.bing.com/th/id/OIP.Phe4RyY3tygWB4VyFC6gqgHaHa?rs=1&pid=ImgDetMain";
         String url1 = "https://th.bing.com/th/id/OIP._kZALwekG6vyAvR7Ed8m9wHaHa?w=640&h=640&rs=1&pid=ImgDetMain";
-        slideModelList.add(new SlideModel(url0,"title", ScaleTypes.FIT));
-        slideModelList.add(new SlideModel(url1,"title2", ScaleTypes.FIT));
+        String url2 = "https://www.captionstatus.com/wp-content/uploads/2018/02/Inspirational-Motivational-Whatsapp-Status.jpg";
+        String url3 = "https://th.bing.com/th/id/OIP.ocKRsJ4qGShm1r7jtbKzTwHaFj?rs=1&pid=ImgDetMain";
+        String url4 = "https://th.bing.com/th/id/OIP.kMXfQQ13NPCvHpMYQum2KAHaHa?w=691&h=691&rs=1&pid=ImgDetMain";
+        String url5 = "https://d1gekqscl85idp.cloudfront.net/wisdomtimes/wp-content/uploads/quote/21222235/robert-collier-success-is-the.jpg";
+        slideModelList.add(new SlideModel(url0, ScaleTypes.FIT));
+        slideModelList.add(new SlideModel(url1, ScaleTypes.FIT));
+        slideModelList.add(new SlideModel(url2, ScaleTypes.FIT));
+        slideModelList.add(new SlideModel(url3, ScaleTypes.FIT));
+        slideModelList.add(new SlideModel(url4, ScaleTypes.FIT));
+        slideModelList.add(new SlideModel(url5, ScaleTypes.FIT));
         engslider.setImageList(slideModelList);
 
         //onClick

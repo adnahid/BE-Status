@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_menu_24"
-        app:title="ISLAMIC"
+        app:title="ইমোশনাল"
         app:titleTextColor="@color/white"
         android:background="#4958dc"
         >

@@ -43,8 +43,8 @@ public class AboutPage extends AppCompatActivity {
         aboutAdView.loadAd(adRequest);
 
 
-        String phone = "https://cdn-icons-png.flaticon.com/128/3059/3059502.png";
-        String gmail = "https://cdn-icons-png.flaticon.com/128/5968/5968534.png";
+        String phone = "https://cdn-icons-png.flaticon.com/128/5968/5968534.png";
+        String gmail = "https://cdn-icons-png.flaticon.com/128/3059/3059502.png";
         String location = "https://cdn-icons-png.flaticon.com/128/535/535188.png";
         String institute =  "https://cdn-icons-png.flaticon.com/128/5636/5636522.png";
 

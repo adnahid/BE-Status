@@ -158,15 +158,13 @@ public class MainActivity extends AppCompatActivity {
 
                 }else if (item.getItemId()==R.id.policy){
 
-                    WebViewActivity.url="https://bdnews24.com/";
+                    WebViewActivity.url="https://sites.google.com/view/bestatus";
                     Intent intent = new Intent(MainActivity.this,WebViewActivity.class);
                     startActivity(intent);
 
                     Toast.makeText(MainActivity.this, "Offer", Toast.LENGTH_SHORT).show();
                     drawerLayout.closeDrawer(GravityCompat.START);
                 }else if (item.getItemId()==R.id.about){
-
-                    WebViewActivity.url="https://bdnews24.com/";
                     Intent intent = new Intent(MainActivity.this,AboutPage.class);
                     startActivity(intent);
 

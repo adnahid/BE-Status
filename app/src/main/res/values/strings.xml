@@ -49,10 +49,12 @@
     </string>
 
     //aboutPage
-    <string name="profile">Md delowar Hossain \n App Developer \n Design </string>
+    <string name="profile">Md delowar Hossain \n App Developer \n and Design </string>
     <string name="gmail">mySelfabout432@gmail.com</string>
     <string name="contact">+880 1648529374</string>
-    <string name="Address"> Sirajpur Companigong \n Noakhili </string>
-    <string name="Institute"> Feni computer Institute \n feni sodor</string>
+    <string name="Address"> Sirajpur Companigong Noakhili </string>
+    <string name="Institute"> Feni computer Institute</string>
+
+    <string name="note">If something goes wrong. Please kindly look at the apology. And let me know.</string>
 
 </resources>
