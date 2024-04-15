@@ -1,4 +1,4 @@
-package com.example.statusapplication;
+package com.delower.bestatus;
 
 import org.junit.Test;
 

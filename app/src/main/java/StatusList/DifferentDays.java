@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,10 +18,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.statusapplication.DetailsActivity;
-import com.example.statusapplication.MainActivity;
-import com.example.statusapplication.R;
-import com.example.statusapplication.SadActivity;
+import com.delower.bestatus.DetailsActivity;
+import com.delower.bestatus.MainActivity;
+import com.delower.bestatus.R;
 import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;

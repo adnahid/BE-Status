@@ -1,4 +1,4 @@
-package com.example.statusapplication;
+package com.delower.bestatus;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+//import com.example.statusapplication.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

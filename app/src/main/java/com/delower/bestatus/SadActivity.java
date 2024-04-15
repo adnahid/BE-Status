@@ -1,4 +1,4 @@
-package com.example.statusapplication;
+package com.delower.bestatus;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +18,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+//import com.example.statusapplication.R;
 import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
@@ -31,8 +31,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
-
-import StatusList.DifferentDays;
 
 public class SadActivity extends AppCompatActivity {
 

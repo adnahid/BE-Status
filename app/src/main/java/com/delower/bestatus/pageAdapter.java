@@ -1,11 +1,9 @@
-package com.example.statusapplication;
+package com.delower.bestatus;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
-import com.google.android.gms.common.Feature;
 
 public class pageAdapter extends FragmentPagerAdapter {
 

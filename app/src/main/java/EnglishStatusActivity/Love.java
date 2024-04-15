@@ -17,8 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.statusapplication.DetailsActivity;
-import com.example.statusapplication.R;
+import com.delower.bestatus.DetailsActivity;
+import com.delower.bestatus.R;
 import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;

@@ -1,5 +1,8 @@
 package EnglishStatusActivity;
 
+import static android.os.Build.VERSION_CODES;
+import static android.os.Build.VERSION_CODES;
+
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Intent;
@@ -9,7 +12,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,9 +20,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.statusapplication.DetailsActivity;
-import com.example.statusapplication.FragmentEng;
-import com.example.statusapplication.R;
+import com.delower.bestatus.DetailsActivity;
+import com.delower.bestatus.R;
 import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
