@@ -10,8 +10,8 @@ android {
         applicationId "com.delower.bestatus"
         minSdk 24
         targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "3.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -50,7 +50,7 @@ dependencies {
     //RoundImage
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     //ImageSlider
-    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2'
+    implementation libs.imageslideshow
     //native
     implementation project(':nativetemplates')
     //picasso

@@ -76,7 +76,7 @@ public class Alone extends AppCompatActivity {
 
 
     }
-
+//adapter
     private class AlonAdapter extends RecyclerView.Adapter{
 
         int Native = 0;
@@ -175,7 +175,7 @@ public class Alone extends AppCompatActivity {
             }else {
                 nativeHolder nativeHolder = (nativeHolder) holder;
 
-                AdLoader adLoader = new AdLoader.Builder(Alone.this, "ca-app-pub-3940256099942544/2247696110")
+                AdLoader adLoader = new AdLoader.Builder(Alone.this, "ca-app-pub-8411075266548653/2415594861")
                         .forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
                             @Override
                             public void onNativeAdLoaded(NativeAd nativeAd) {
@@ -213,7 +213,7 @@ public class Alone extends AppCompatActivity {
 
         for ( int x=0; x<arrayList.size(); x++){
 
-            if ( x>1 && x%50==0){
+            if ( x>1 && x%30==0){
                 hashMap = new HashMap<>();
                 hashMap.put("itemType","NativeAd");
                 finalArrayList.add(hashMap);
